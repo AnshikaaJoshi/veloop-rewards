@@ -1,0 +1,577 @@
+.banner {
+  width: 100%;
+  height: 420px;
+  background-color: var(--color-surface);
+
+  border: none;
+  border-radius: 0;
+
+  padding: 60px;
+
+  box-shadow: var(--shadow-card);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Reference jaisa inner outline */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+
+  border: 1px solid var(--color-golden);;
+  border-radius: 22px;
+
+  pointer-events: none;
+}
+
+.visual {
+  width: 35%;
+}
+
+.visual img {
+  width: 100%;       
+  height: auto;      
+  object-fit:contain;  
+  transition: var(--transition-normal);
+  position: relative;
+  right: 70px;
+  bottom:24px;
+  
+}
+
+.visual img:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+.dayStreak{
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 130px;
+
+}
+.content {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+/* 05 + CONTACT US */
+
+.rankNumber {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #dfb90d;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+
+  border-radius: 10px 10px 10px 0;
+}
+
+.stageInfo {
+  margin-left: 50px;
+}
+.stageText {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #dfb90d;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 550;
+  margin: 0;
+  color: var(--color-text-primary);
+  line-height: 1.0;
+  margin-left: 50px;
+}
+
+.title span {
+  display: block;
+}
+.description {
+  font-size: 16px;
+  font-weight:350;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+  margin-left: 50px;
+}
+
+.highlight {
+  color: var(--color-text-primary);
+}
+
+.button {
+  width: 40%;
+  padding: 2px 6px;
+  margin-left: 50px;
+
+  background-color:rgba(236, 206, 6, 0.84);
+  border: .2px solid var(--color-text-primary);
+  
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: var(--transition-fast);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+.button:hover {
+  background-color: var(--color-text-primary);
+  color: #161827;
+  transform: translateY(-2px);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 4px;
+}
+
+.buttonText{
+  font-size: 16px;
+}
+
+.buttonIcon{
+  font-size: 40px;
+}
+
+.claimMessage {
+  margin: 6px 0 0;
+  color: #f5c451;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  gap: 8px;
+  animation: claimMessageIn 0.3s ease;
+}
+
+.claimMessage::before {
+  content: "✓";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f5c451;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+@keyframes claimMessageIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bonusInfo {
+  border: 1px solid var(--color-accent);
+  border-radius: 14px;
+  padding: 13px 12px;
+  width: 15%;
+  height: 80%;
+  box-sizing: border-box;
+  position: relative;
+  right:70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.bonusInfo h6{
+  color:#fa9510;
+}
+.bonusUpdates{
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  gap: 4px;
+  
+}
+.bonusUpdates h1{
+  font-size: 33px;
+}
+.bonusUpdates p{
+  font-size: 17px;
+  margin-left: 16px;
+}
+
+.streakInfo {
+  width: 25%;
+  max-width: 340px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-accent);
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.streakInfo h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 350;
+  letter-spacing: 0.5px;
+  color: var(--color-accent);
+}
+
+.streakDays {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.streakDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.dayNumber {
+  color: var(--color-text-primary);
+  font-size: 14px;
+}
+
+.dayCircle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-text-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+  font-size: 16px;
+}
+
+.dayCircle.completed {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #161827;
+  font-weight: 700;
+}
+
+.streakInfo h4 {
+  margin: 22px 0 8px;
+  color: var(--color-accent);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.streakInfo p {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 15px;
+}
+
+/* =========================
+   TABLET
+   768px - 1024px
+========================= */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  .banner {
+    height: 450px;
+    padding: 35px;
+  }
+
+  .content {
+    width: 40%;
+  }
+
+  .rankNumber {
+    width: 52px;
+    height: 52px;
+    font-size: 27px;
+  }
+
+  .stageInfo {
+    margin-left: 35px;
+  }
+
+  .stageText {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 34px;
+    margin-left: 35px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-left: 35px;
+  }
+
+  .button {
+    width: 55%;
+    margin-left: 35px;
+    padding: 7px 10px;
+    gap: 15px;
+  }
+
+  .buttonText {
+    font-size: 14px;
+  }
+
+  .buttonIcon {
+    font-size: 30px;
+  }
+
+  .visual {
+    width: 25%;
+  }
+
+  .visual img {
+    width: 100%;
+    height: 270px;
+    right: 40px;
+    bottom: 0;
+  }
+
+  .dayStreak {
+    width: 25%;
+    right: 20px;
+  }
+
+  .bonusInfo {
+    width: 22%;
+    height: 75%;
+    right: 10px;
+    padding: 12px;
+  }
+
+  .bonusUpdates h1 {
+    font-size: 25px;
+  }
+
+  .bonusUpdates p {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .streakInfo {
+    width: 25%;
+    padding: 20px;
+  }
+
+  .streakDays {
+    gap: 6px;
+  }
+
+  .dayCircle {
+    width: 27px;
+    height: 27px;
+    font-size: 14px;
+  }
+
+  .dayNumber {
+    font-size: 12px;
+  }
+
+  .streakInfo h4 {
+    font-size: 17px;
+  }
+
+  .streakInfo p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+   Below 768px
+========================= */
+
+@media (max-width: 767px) {
+
+  .banner {
+    height: auto;
+    min-height: 700px;
+    padding: 30px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .rankNumber {
+    top: 15px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+
+  .content {
+    width: 100%;
+    max-width: none;
+    gap: 12px;
+  }
+
+  .stageInfo {
+    margin-left: 45px;
+  }
+
+  .stageText {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-left: 45px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-left: 25px;
+  }
+
+  .description br {
+    display: none;
+  }
+
+  .button {
+    width: 70%;
+    margin-left: 45px;
+    padding: 9px 10px;
+    gap: 10px;
+  }
+
+  .buttonText {
+    font-size: 13px;
+  }
+
+  .buttonIcon {
+    font-size: 25px;
+  }
+
+  .claimMessage {
+    margin-left: 40px;
+    font-size: 13px;
+  }
+
+  /* Gift / bonus visual */
+
+  .visual {
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .visual img {
+    width: 70%;
+    max-width: 260px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* Today's Bonus box */
+
+  .bonusInfo {
+    width: 90%;
+    height: auto;
+    min-height: 150px;
+    right: 0;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .bonusUpdates {
+    align-items: center;
+  }
+
+  .bonusUpdates h1 {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+
+  .bonusUpdates p {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  /* 7-Day Streak */
+
+  .dayStreak {
+    width: 100%;
+    right: 0;
+    padding: 10px 0;
+  }
+
+  .streakInfo {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .streakInfo h3 {
+    font-size: 14px;
+  }
+
+  .streakDays {
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .dayCircle {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .dayNumber {
+    font-size: 12px;
+  }
+
+  .streakInfo h4 {
+    font-size: 18px;
+    margin-top: 18px;
+  }
+
+  .streakInfo p {
+    font-size: 13px;
+  }
+}

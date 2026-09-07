@@ -1,0 +1,152 @@
+.footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: #071a36;
+  padding: 25px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 750px;
+}
+
+.infoIcon {
+  color: var(--color-text-primary);
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.notice p {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.notice strong {
+  font-weight: 700;
+}
+
+
+.visual {
+  width: 50%;
+}
+
+.visual img {
+  width: 140px;
+  height: auto;      
+  object-fit:cover;  
+  transition: var(--transition-normal);
+  position: relative;
+  left:340px;
+  bottom:7px;
+  
+}
+
+.visual img:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+
+
+.rewards {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: var(--color-text-primary);
+}
+
+/* =========================
+   TABLET
+   768px - 1024px
+========================= */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  .footer {
+    min-height: 100px;
+    padding: 22px 35px;
+  }
+
+  .notice {
+    gap: 20px;
+    max-width: 65%;
+  }
+
+  .infoIcon {
+    font-size: 26px;
+  }
+
+  .notice p {
+    font-size: 13px;
+  }
+
+  .visual {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .visual img {
+    width: 120px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+/* =========================
+   MOBILE
+   Below 768px
+========================= */
+
+@media (max-width: 767px) {
+
+  .footer {
+    min-height: 150px;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .notice {
+    width: 100%;
+    max-width: none;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .infoIcon {
+    font-size: 24px;
+    margin-top: 2px;
+  }
+
+  .notice p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .visual img {
+    width: 120px;
+    height: auto;
+    left: 0;
+    bottom: 0;
+  }
+}

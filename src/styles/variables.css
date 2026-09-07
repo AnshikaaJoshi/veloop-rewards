@@ -1,0 +1,25 @@
+:root {
+  /* Colors */
+  --color-background: #161827;
+  --color-surface: #20243a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a8adbd;
+  --color-accent: #f5c451;
+  --color-blue: #1688ff;
+  --color-border: #343950;
+  --color-accent-blue-light: #8FAEEA;
+  --color-purple: #9d6af6;
+  --color-golden:#dfb90d;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 9px rgba(0, 0, 0, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
