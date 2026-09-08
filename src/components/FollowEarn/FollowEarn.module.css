@@ -181,15 +181,6 @@
   border-radius: 50%;
   font-size: 22px;
 }
-.stageInfo {
-  margin-left: 50px;
-}
-.stageText {
-  font-size: 18px;
-  font-weight: 450;
-  letter-spacing: 1.5px;
-  color: var(--color-purple);
-}
 
 .title {
   font-size: 38px;
@@ -210,6 +201,27 @@
 .highlight {
   color: var(--color-accent-blue-light);
 }
+
+/* =========================
+   DESKTOP
+   1025px - 1920px
+========================= */
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .button{
+    gap: 15px;
+    white-space: nowrap;
+  }
+  .buttonIcon {
+    flex-shrink: 0;
+  }
+  .visual img {
+    width: 120%; 
+    height: 350px;
+    object-fit: contain;
+    right: 140px;
+  }
+}
 /* =========================
    TABLET
    768px - 1024px
@@ -220,6 +232,7 @@
   .banner {
     height: 450px;
     padding: 35px;
+    align-items: center;
   }
 
   .content {
@@ -227,7 +240,7 @@
   }
 
   .stageInfo {
-    margin-left: 35px;
+    margin-left: 5px;
   }
 
   .stageText {
@@ -236,20 +249,21 @@
 
   .title {
     font-size: 32px;
-    margin-left: 35px;
+    margin-left: 5px;
   }
 
   .description {
     font-size: 14px;
-    margin-left: 35px;
+    margin-left: 5px;
   }
 
   .button {
     width: 55%;
-    margin-left: 35px;
-    padding: 8px 10px;
-    font-size: 13px;
-    gap: 12px;
+    margin-left: 5px;
+    padding: 7px 6px;
+    font-size: 6px;
+    gap: 4px;
+    white-space: nowrap;
   }
 
   .buttonText {
@@ -266,34 +280,43 @@
 
   .visual img {
     width: 100%;
-    height: 280px;
-    right: 30px;
+    height: 260px;
+    right: 35px;
     bottom: 0;
+    transform: translateX(16px) scale(1.68);
+    object-fit: contain;
   }
 
+  .visual img:hover {
+    transform: translateX(16px) translateY(-8px) scale(1.68);
+  }
   .earnInfo {
     width: 25%;
     padding: 14px;
+    position: relative;
+    left:15px;
+    
   }
 
   .earnIcon {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     padding: 12px;
-    font-size: 22px;
+    font-size: 20px;
   }
+ 
 
   .earnBackend {
-    margin-left: 15px;
+    margin-left: 12px;
   }
 
   .earnBackend h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .earnBackend p {
     margin-left: 5px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .earnDesign .description {

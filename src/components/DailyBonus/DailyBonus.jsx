@@ -68,7 +68,7 @@ function DailyBonus() {
         </div>
       </div>
 
-      <div className={styles.streakInfo}>
+<div className={styles.streakInfo}>
   <h3>7-DAY STREAK</h3>
 
   <div className={styles.streakDays}>
