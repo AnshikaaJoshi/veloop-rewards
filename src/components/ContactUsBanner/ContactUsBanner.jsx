@@ -19,7 +19,7 @@ function ContactBanner() {
 
         {/* Heading */}
         <h2 className={styles.title}>
-          <span>Need Help?</span>
+          <span>Need Help?</span>{" "}
           <span className={styles.highlight}>We're Here.</span>
         </h2>
 

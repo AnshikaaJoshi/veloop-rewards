@@ -335,10 +335,10 @@
 
   .banner {
     height: auto;
-    min-height: 650px;
+    min-height: 520px;
     padding: 30px 25px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
   }
 
@@ -353,25 +353,25 @@
   .content {
     width: 100%;
     max-width: none;
-    gap: 12px;
+    gap: 10px;
   }
 
   .stageInfo {
-    margin-left: 45px;
+    margin-left: 39px;
   }
 
   .stageText {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .title {
-    font-size: 30px;
-    margin-left: 45px;
+    font-size: 26px;
+    margin-left: 35px;
   }
 
   .description {
     font-size: 14px;
-    margin-left: 25px;
+    margin-left: 35px;
   }
 
   .description br {
@@ -379,11 +379,12 @@
   }
 
   .button {
-    width: 70%;
+    width: 50%;
     margin-left: 45px;
     padding: 9px 10px;
     font-size: 13px;
-    gap: 10px;
+    gap: 6px;
+    white-space: nowrap;
   }
 
   .buttonText {
@@ -396,7 +397,7 @@
 
   .visual {
     width: 100%;
-    min-height: 200px;
+    min-height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,7 +406,7 @@
   .visual img {
   width: 100%;
   max-width: 100%;
-  height: 300px;
+  height: 180px;
   object-fit: contain;
   transition: var(--transition-normal);
   position: relative;
@@ -416,7 +417,8 @@
   .earnInfo {
     width: 90%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 6px;
+    
   }
 
   .earnDesign {
@@ -426,8 +428,8 @@
   .earnIcon {
     width: 55px;
     height: 55px;
-    padding: 12px;
-    font-size: 22px;
+    padding: 10px;
+    font-size: 18px;
   }
 
   .earnDesign .description {
@@ -437,16 +439,16 @@
 
   .earnBackend {
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 4px;
     align-items: flex-start;
   }
 
   .earnBackend h1 {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .earnBackend p {
     margin-left: 0;
-    font-size: 13px;
+    font-size: 10px;
   }
 }

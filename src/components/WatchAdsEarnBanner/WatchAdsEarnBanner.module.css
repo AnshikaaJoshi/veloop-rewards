@@ -301,7 +301,7 @@
 
   .banner {
     height: auto;
-    min-height: 500px;
+    min-height: 450px;
     padding: 30px 25px;
     flex-direction: column;
     align-items: flex-start;
@@ -348,7 +348,7 @@
   .features {
     width: 100%;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
   }
 
   .feature {
@@ -357,15 +357,15 @@
   }
 
   .button {
-    width: 100%;
-    padding: 10px 20px;
+    width: 50%;
+    padding: 8px 20px;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 4px;
   }
 
   .visual {
     width: 100%;
-    min-height: 220px;
+    min-height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -373,7 +373,7 @@
 
   .visual img {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
   }
 
   .claimMessage {

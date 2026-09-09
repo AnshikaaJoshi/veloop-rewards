@@ -26,7 +26,7 @@ function WatchAdsEarnBanner() {
 
         {/* Heading */}
         <h2 className={styles.title}>
-          <span>Watch Ads.</span>
+          <span>Watch Ads.</span>{" "}
           <span className={styles.highlight}>Earn VEs.</span>
         </h2>
 

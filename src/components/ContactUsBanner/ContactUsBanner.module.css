@@ -355,7 +355,7 @@
 
   .banner {
     height: auto;
-    min-height: 520px;
+    min-height: 450px;
     padding: 30px 25px;
     flex-direction: column;
     align-items: flex-start;
@@ -373,7 +373,7 @@
   .content {
     width: 100%;
     max-width: none;
-    gap: 12px;
+    gap: 5px;
   }
 
   .stageInfo {
@@ -385,12 +385,12 @@
   }
 
   .title {
-    font-size: 30px;
+    font-size: 27px;
     margin-left: 45px;
   }
 
   .description {
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 45px;
   }
 
@@ -399,15 +399,15 @@
   }
 
   .button {
-    width: 55%;
+    width: 50%;
     margin-left: 45px;
     padding: 9px 10px;
-    font-size: 13px;
+    font-size: 12px;
     gap: 10px;
   }
 
   .buttonText {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .buttonIcon {
@@ -419,7 +419,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200px;
+    min-height: 170px;
   }
 
   .visual img {
@@ -431,15 +431,15 @@
   }
 
   .supportInfo {
-    width: 90%;
-    padding: 14px;
+    width: 85%;
+    padding: 10px;
     margin: 0 auto;
     bottom: 0;
   }
 
   .supportTitle {
-    padding: 8px;
-    font-size: 15px;
+    padding: 6px;
+    font-size: 14px;
   }
 
   .contactSection {
@@ -448,15 +448,17 @@
 
   .supportText,
   .helpText {
-    gap: 15px;
+    gap: 10px;
     font-size: 13px;
   }
 
   .emailSection {
-    gap: 8px;
+    gap: 4px;
   }
 
   .copyButton {
-    font-size: 12px;
+    width:50%;
+    margin-left: 50px;
+    font-size: 10px;
   }
 }
