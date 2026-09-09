@@ -362,16 +362,17 @@
 
   .stageText {
     font-size: 11px;
+    margin-left: 4px;
   }
 
   .title {
     font-size: 26px;
-    margin-left: 35px;
+    margin-left: 37px;
   }
 
   .description {
     font-size: 14px;
-    margin-left: 35px;
+    margin-left: 37px;
   }
 
   .description br {
@@ -380,8 +381,8 @@
 
   .button {
     width: 50%;
-    margin-left: 45px;
-    padding: 9px 10px;
+    margin-left: 40px;
+    padding: 8px 7px;
     font-size: 13px;
     gap: 6px;
     white-space: nowrap;
@@ -414,15 +415,18 @@
   bottom: 0;
 }
 
+.earnHeader{
+  width: 100%;
+}
   .earnInfo {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     padding: 6px;
     
   }
 
   .earnDesign {
-    justify-content: flex-start;
+    justify-content:flex-start;
   }
 
   .earnIcon {
@@ -435,16 +439,18 @@
   .earnDesign .description {
     font-size: 12px;
     margin-left: 12px;
+    line-height: 1.2;
   }
 
   .earnBackend {
     margin-left: 0;
-    margin-top: 4px;
+    margin-top: 0;
     align-items: flex-start;
   }
 
   .earnBackend h1 {
     font-size: 15px;
+    margin: 0; 
   }
 
   .earnBackend p {

@@ -556,13 +556,13 @@
   /* Today's Bonus box */
 
   .bonusInfo {
-    width: 90%;
+    width: 85%;
     height: auto;
-    min-height: 50px;
+    min-height: 5px;
     right: 0;
     margin: 0 auto;
-    padding: 8px;
-    gap: 2px;
+    padding: 3px 6px;
+    gap: 0;
   }
 
   .bonusUpdates {
@@ -581,43 +581,47 @@
 
   /* 7-Day Streak */
 
-  .dayStreak {
-    width: 90%;
+  .streakDays {
+    width: 85%;
     right: 0;
-    padding: 10px 0;
+    justify-content: space-between;
+    gap: 3px;
   }
 
   .streakInfo {
     width: 90%;
-    padding: 8px;
-    margin: 0 auto;
+    padding: 4px 14px;
+    margin: 18px auto 0;
   }
 
   .streakInfo h3 {
-    font-size: 12px;
+    font-size: 11px;
   }
-
-  .streakDays {
-    justify-content: space-between;
-    gap: 4px;
-  }
+  .streakInfo h4 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.streakInfo p {
+  font-size: 9px;
+}
 
   .dayCircle {
-    width: 24px;
-    height: 24px;
-    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 9px;
   }
 
   .dayNumber {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .streakInfo h4 {
-    font-size: 16px;
-    margin-top: 18px;
+    font-size: 14px;
+    margin-top: 10px;
   }
 
   .streakInfo p {
-    font-size: 10px;
+    font-size: 9px;
+    margin: 4px 0 0;
   }
 }
