@@ -72,8 +72,10 @@ function DailyBonus() {
   <h3>7-DAY STREAK</h3>
 
   <div className={styles.streakDays}>
-    {streakDays.map((completed, index) => (
-      <div key={index} className={styles.streakDay}>
+  {streakDays.map((completed, index) => (
+    <div className={styles.streakItem} key={index}>
+
+      <div className={styles.streakDay}>
         <span className={styles.dayNumber}>{index + 1}</span>
 
         <span
@@ -81,11 +83,17 @@ function DailyBonus() {
             completed ? styles.completed : ""
           }`}
         >
-          {completed ? "✓" : ""}
+          {completed ? "✓" : index + 1}
         </span>
       </div>
-    ))}
-  </div>
+
+      {index < streakDays.length - 1 && (
+        <span className={styles.streakConnector}></span>
+      )}
+
+    </div>
+  ))}
+</div>
 
   <h4>6 Days Completed</h4>
   <p>Come back tomorrow!</p>
