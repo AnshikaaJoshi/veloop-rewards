@@ -25,9 +25,8 @@ function ContactBanner() {
 
         {/* Description */}
         <p className={styles.description}>
-          Have a question, concern, or need assistance?
-          <br />
-          Get in touch with the VELOOP Rewards team.
+          Have a question, concern, or need assistance?{" "} 
+          <span>Get in touch with the VELOOP Rewards team.</span>
         </p>
 
         {/* CTA */}

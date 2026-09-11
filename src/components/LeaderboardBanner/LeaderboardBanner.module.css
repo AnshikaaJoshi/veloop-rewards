@@ -211,11 +211,9 @@
 .visual {
   width: 55%;
   min-height: 300px;
-
+  justify-content: flex-start;
   display: flex;
   align-items: center;
-  justify-content: center;
-
   position: relative;
   z-index: 1;
 }
@@ -303,6 +301,31 @@
 }
 
 /* =========================
+   DESKTOP
+   1025px - 1920px
+========================= */
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .banner {
+    height: 420px;
+    padding: 60px;
+    align-items: center;
+  }
+  .content {
+  width: 50%;
+  }
+  .description {
+  margin-left: 6px;
+  line-height: 1.5;
+  max-width: 500px;
+  font-size: 20px;
+}
+.title span {
+  display: inline;
+}
+
+}
+
+/* =========================
    TABLET
    768px - 1024px
 ========================= */
@@ -310,7 +333,7 @@
 @media (max-width: 1024px) and (min-width: 768px) {
 
   .banner {
-    height: 450px;
+    height: 390px;
     padding: 35px;
   }
 
@@ -408,7 +431,7 @@
 
   .banner {
     height: auto;
-    min-height: 450px;
+    min-height: 0px;
 
     padding: 30px 25px;
 

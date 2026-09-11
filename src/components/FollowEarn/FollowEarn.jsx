@@ -29,11 +29,9 @@ function FollowEarn() {
 
         {/* Description */}
         <p className={styles.description}>
-          Follow VELOOP REWARDS on our official
-          <br />
-          channels and participate in eligible social
-          <br />
-          campaigns to unlock rewards.
+          Follow VELOOP REWARDS on our official{" "}
+          <span>channels and participate in eligible social</span>{" "}
+          <span>campaigns to unlock rewards.</span>
         </p>
 
         {/* CTA */}

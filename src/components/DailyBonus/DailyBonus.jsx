@@ -34,10 +34,9 @@ function DailyBonus() {
 
         {/* Description */}
         <p className={styles.description}>
-          Check in regularly and claim your available 
-          <br />
-          daily bonus before the opportunity resets.
-        </p>
+  Check in regularly and claim your available{" "}
+  <span>daily bonus before the opportunity resets.</span>
+</p>
 
         {/* CTA */}
         <button className={styles.button} onClick={() => setClaimed(true)}>
